@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="contact-form" >
+    <img src="/app/home/i chat.jpg" alt="" class="image">
+    <h3>iChat!</h3>
+</div>
+
+<ion-content class="background-image">
+<br><br><br><br><br><br><br><br><br>
+<ion-card color="danger">
+    <ion-item  color="none">
+          <ion-label position ="floating" >email</ion-label>
+          <ion-input class="mail" [(ngModel)]="email">
+          </ion-input>
+    
+    </ion-item>
+
+  <ion-item  color="none">
+        <ion-label position ="floating">password</ion-label>
+        <ion-input class="pass" [(ngModel)]="pwd" type="password" color="none">
+        </ion-input>
+    
+    </ion-item>
+    <br>
+  
+
+    <div text-center>
+
+        <ion-button (click)="login()" fill="clear">login</ion-button>
+  
+    </div>
+  
+    <br>
+
+    <div text-center>
+
+      <b>___________or___________</b>
+      <br><br>
+    
+    </div> 
+    
+
+  <ion-button fill="clear" (click)="anonymous()" >Anonymous Login</ion-button>
+</ion-card>
+<label>Not a registred user yet?</label>
+<ion-button fill="clear" [routerDirection]="'forward'" [routerLink]="['/signup']">Signup</ion-button>
+
+
+  
+  </ion-content>
+
+<!-- <ion-grid>
+
+<ion-item color="none">
+<ion-label position="floating">
+email
+</ion-label>
+<ion-input [(ngModel)]="email"></ion-input>
+</ion-item>
+
+<ion-item color="none">
+<ion-label position="floating">
+password
+</ion-label>
+<ion-input [(ngModel)]="pwd"
+ type="password"></ion-input>
+</ion-item>
+<br>
+<div text-center>
+<ion-button (click)="login()" fill="clear" >sign-up</ion-button>
+
+____________or____________
+<br>
+<ion-button (click)="goto_signUp()" fill="clear">login</ion-button>
+</div>
+</ion-grid> -->
+
+

@@ -1,0 +1,58 @@
+.background-image{
+  --background: url("../../page/signup/background.jpg") 0 0/100% 100%  
+  no-repeat;
+}
+
+
+
+.image{
+    position: absolute;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    overflow:hidden;
+    top: calc(-20px);
+    left: calc(50%/40px);
+  }
+
+h3 
+{
+  text-align: center;
+  color: solid #272525; 
+
+}
+
+body{
+ margin:0;
+ padding:0;
+}
+body:before
+{
+content:'';
+position:fixed;
+width:100vw;
+height:100vh;
+// background-image: url("../../page/signup/background.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size:cover;
+background-size: cover;
+color: black;
+
+
+
+}
+.contact-form{
+ position: absolute;
+ top:50%;
+ left:50%;
+ -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,-50%);
+ -o-transform:translate(-50%,-50%);
+ transform:translate(-50%,-50%);
+ width:400px;
+ height:500px;
+ padding: 80px 40px;
+
+}

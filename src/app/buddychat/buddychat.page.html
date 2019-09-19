@@ -1,0 +1,41 @@
+<ion-header>
+ <ion-toolbar>
+ 
+    <ion-title>{{buddy.displayName}}</ion-title>
+  
+</ion-toolbar>
+</ion-header>
+ 
+ 
+<ion-content #content>
+  <ion-list>
+    <ion-item class="user-item" *ngFor="let user of userList">
+        <div class="user-avatar">
+            <img  [src]="user.avatarURL" alt="">
+        </div>
+        <ion-label class="user-name">
+           {{ user.name }}
+        </ion-label>
+        <div class="user-presence">
+            <ion-icon [class.user-online]="isOnline(user)" name="radio-button-on"></ion-icon>
+        </div>  
+        <div>
+            <ion-button size="small" [routerLink]="['/private-chat',user.id]">
+              <ion-icon name="chatbubbles" ></ion-icon>
+            </ion-button>
+
+        </div>  
+
+    </ion-item>
+  </ion-list>
+</ion-content>
+<!-- <ion-footer ion-fixed>    
+  <ion-toolbar class="no-border" color="white">        
+    <ion-input [(ngModel)]="newmessage" placeholder="Write your message ..."></ion-input>  
+    <ion-buttons end>
+      <button ion-button (click)="addmessage()">
+        <ion-icon name="send" color="primary"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>    
+</ion-footer> -->

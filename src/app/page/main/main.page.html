@@ -1,0 +1,84 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>
+      Private Chat Room
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        Logout
+      </ion-button>
+    </ion-buttons> -->
+
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <div *ngFor="let msg of messageList" class="message left ">
+      <img class="user-img" [src]="msg.sender.avatarURL" alt="" src="">
+      <div class="msg-detail">
+        <div class="msg-info">
+          <p>
+            {{msg.sender.name}}
+          </p>
+        </div>
+        <div class="msg-content">
+          <span class="triangle"></span>
+          <p class="line-breaker">{{msg.text}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer no-border>
+  <div class="input-wrap">
+    <textarea #messageInput placeholder="Enter your message!" [(ngModel)]="chatMessage" (keyup.enter)="sendMessage()">
+    </textarea>
+    <button ion-button clear icon-only item-right (click)="sendMessage()">
+      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+    </button>
+  </div>
+</ion-footer>
+<!-- <ion-content class="background-image">
+<div class="chat" *ngFor="let chat of chatRef | async">
+  
+  <div class="me" *ngIf="uid == chat.UserID">
+      <span class="name">{{chat.name}}</span> 
+      <br>
+     
+    {{chat.Message}}
+ 
+  </div>
+
+    <div class="you" *ngIf="uid != chat.UserID">
+    <span class="name">{{chat.name}}</span> 
+    <br>
+   
+    {{chat.message}}
+
+    </div>
+</div>
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-input class="type" placeholder="Type..." [(ngModel)]="text">
+      <ion-button (click)="send()" fill="clear" icon-only slot="end">
+        <ion-icon name="send">
+        </ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+</ion-footer> -->

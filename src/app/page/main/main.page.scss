@@ -1,0 +1,97 @@
+.background-image{
+    --background: url("../signup/chats.jpg") 0 0/100% 100%  
+    no-repeat;
+}
+
+
+// .chat{
+//     display:flex;
+//     flex-direction: column;
+   
+// }
+// .me{
+//     position: relative;
+//     margin: 20px 5px 0px;
+//     max-width:80%;
+//     align-self:flex-end;
+//     padding: 6px 10px 7px;
+//     border-radius: 15px 15px  0;
+//     background: rgb(223, 102, 33);
+//     font-size: large;
+//     line-height: 1.4;
+// }
+// .you{
+//     position: relative;
+//     margin: 20px 5px 0px;
+//     max-width:80%;
+// align-self: baseline;
+//     padding: 6px 10px 7px;
+//     border-radius: 15px 15px  0;
+//     background: rgb(156, 15, 156);
+//     box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+//     font-size: large;
+//     line-height: 1.8;
+// }
+// .name{
+//     font-size: large;
+//     font-weight:bold;
+// }
+// .type{
+//     float: right;
+// }
+.input-wrap {
+    padding: 5px;
+    display: flex;
+    textarea {
+      flex: 3;
+      border: 0;
+      border-bottom: 1px #000;
+      border-style: solid;
+    }
+    button {
+        flex: 1;
+    }
+}
+ion-footer {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.11);
+    background-color: #fff;
+}
+ion-content .scroll-content {
+    background-color: #f5f5f5;
+}
+.line-breaker {
+    white-space: pre-line;
+}
+.container {
+
+  .message {
+    position: relative;
+    padding: 7px 0;
+    .msg-content {
+        color: #343434;
+        background-color: #ddd;
+        float: left;        
+    }
+    .user-img {
+        position: absolute;
+        border-radius: 45px;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.36);
+    }
+    .msg-detail {
+        width: 100%;
+        padding-left: 60px;
+        display: inline-block;
+        p {
+          margin: 0;
+        }
+        .msg-info {
+          p {
+            font-size: .8em;
+            color: #888;
+          }
+        }
+    }
+  }
+}

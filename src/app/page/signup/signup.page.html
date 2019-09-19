@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+
+  <br><br><br> <br><br><br>
+        <ion-card color="light">
+            <br><br><br>
+        <ion-item color="none">
+            <ion-label position ="floating">username</ion-label>
+              <ion-input [(ngModel)]="username" type="text">
+              </ion-input>
+         
+          </ion-item>
+
+  <ion-item color="none">
+    <ion-label position ="floating">email</ion-label>
+      <ion-input [(ngModel)]="email">
+      </ion-input>
+
+  </ion-item>
+
+  <ion-item color="none">
+      <ion-label position ="floating">password</ion-label>
+        <ion-input [(ngModel)]="pwd" type="password">
+        </ion-input>
+  
+    </ion-item>
+
+    
+    <br>
+    <div text-center>
+        <!-- <ion-button (click)="goto_login()" fill="clear">login</ion-button> -->
+        <ion-button (click)="register()" fill="clear">register</ion-button>
+      </div>
+  
+    </ion-card>
+</ion-content>
